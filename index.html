@@ -3,34 +3,41 @@
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header-main-page">
+       <div class="main-header-box">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                    <img src="img/logo.svg" width="111" height="24" alt="Логотип Nerds" >
+                    <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Nerds" >
                 </a>
             <ul class="main-navigation-list">
                 <li><a class="main-naviganion-item" href="studio.html">Студия</a></li>
                 <li><a class="main-naviganion-item" href="customers.html">Клиенты</a></li>
                 <li><a class="main-naviganion-item" href="shop.html">Магазин</a></li>
                 <li><a class="main-naviganion-item" href="contacts.html">Контакты</a></li>
-                <li><a class="main-naviganion-item" href="basket.html">Корзина</a></li>
+                
             </ul>
             
-            
-        </nav>
+            <div class="basket-box">
+            	<img src="img/cart-icon.png" width="15px" height="15px"> 
+            	<a class="main-naviganion-item" href="basket.html">Корзина</a>
+            </div>
+         </nav>
         <section class="main-baner">
             <ul class="baner-list">
                 <li class="baner-item">
-                    <h1 class="baner-h1">Долго, дорого, скрупулезно</h1>
-                    <p class="baner-text">Математически выверенный дизайн<br>
-                                          для вашего сайта или молильного приложения</p>
-                    <span class="button button-buner" href="studio.html"> Узнать больше</span>
-                    <img src="img/baner-1.jpg" alt="Дизайн сайта и приложения">
+                   <div class="baner-left-side">
+                        <h1 class="baner-h1">Долго, дорого, скрупулезно</h1>
+                        <p class="baner-text">Математически выверенный дизайн для вашего сайта или молильного приложения</p>
+                        <span class="button button-buner" href="studio.html"> Узнать больше</span>
+                        </div>
+                    <img src="img/slide1.png" width="698" height="413" alt="Дизайн сайта и приложения">
                 </li>
-                <li class="baner-item">
+<!--
+           	  <li class="baner-item">
                     <h1 class="baner-h1" >Любим матетатику<br>
                                           как никто другой</h1>
                     <p class="baner-text">Никакого креатива, только математические формулы<br>
@@ -46,8 +53,10 @@
                     <span class="button button-buner" href="studio.html"> Узнать больше</span>
                     <img src="img/baner-3.jpg" alt="Дизайн сайта и приложения">
                 </li>
+-->
             </ul>
         </section>
+        </div>
     </header>
     
     <main class="container">
@@ -55,24 +64,27 @@
             <h2 class="visualy-hidden">Наши услуги</h2>
             <ul class="our-services-list">
                 <li class="our-services-item">
+                   <img class="service-image" src="img/illustration-1.jpg.png" width="300" height="146" alt="Веб-сайты">
                     <h3 class="servis-item">Веб-сайты</h3>
-                    <img class="service-image" src="img/web-sites.jpg" alt="Веб-сайты">
+                    
                     <p class="service-text">Мир никогда не будет прежним<br>
                                             после того как увидит ваш сайт!</p>
                     <a class="button-link" href="herds-shop.html"><span class="button button-services button-red">Заказать</span></a>
                 </li>
                 
                 <li class="our-services-item">
+                   <img class="service-image" src="img/illustration-2.jpg.png" width="300" height="146"  alt="Приложения">
                     <h3 class="servis-item">Приложения</h3>
-                    <img class="service-image" src="img/app.jpg" alt="Приложения">
+                    
                     <p class="service-text">Покорите топ-10 приложений в<br>
                                             AppStore и Google Play</p>
                     <a class="button-link" href="herds-shop.html"><span class="button button-services button-green">Заказать</span></a>
                 </li>
                 
                  <li class="our-services-item">
+                    
+                    <img class="service-image" src="img/illustration-3.jpg.png" width="300" height="146"  alt="Презентации">
                     <h3 class="servis-item">Презентации</h3>
-                    <img class="service-image" src="img/presentations.jpg" alt="Презентации">
                     <p class="service-text">Вы даже не подозреваете,<br>
                                             насколько вы изумительны!</p>
                     <a class="button-link" href="herds-shop.html"><span class="button button-services button-yellow">Заказать</span></a>
@@ -81,80 +93,97 @@
         </section>
        
         <section class="studio-promo">
-            <h2 class="studio-promo-h2">Мы - маленькая, но гордая<br>
+           <div class="promo">
+            <h2 class="studio-promo-h2">Мы - маленькая, но гордая
                                         дизайн-студия из Краснодара.</h2>
-            <p class="studio-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+            <p class="studio-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                                    превыше креатва. Работаем не покладая рук, как роботы.</p>
             <h3 class="web-orders">Выполняем заказы на разработку</h3>
             <ul class="web-orders-list">
                 <li class="web-orders-item">
-                    <p class="web-orders-text">Веб-Сайтов любой сложности</p>
+                    <p class="web-orders-text">	  Веб-Сайтов любой сложности</p>
                 </li>
                 <li class="web-orders-item">
-                    <p class="web-orders-text">Мобильных приложений для iOS и Android</p>
+                    <p class="web-orders-text">  Мобильных приложений для iOS и Android</p>
                 </li>
                 <li class="web-orders-item">
                     <p class="web-orders-text">Сдайдшоу и видео для корпоративных презенитций</p>
                 </li>
             </ul>
+            </div>
             
-            <img src="img/logo-studio.jpg" alt="логотип Nerds">
+            <div class="web-orders-box">
+            <img src="img/nerds-illustration.jpg.png" width="360" height="208" alt="логотип Nerds">
             <h3 class="web-orders">С 2004 года любим точность во всем</h3>
             <ul class="web-orders-conditions-list">
                 <li class="web-orders-conditions-item">
                     <span class="conditions-numbers">146</span>
                     <span class="conditions-percents">%</span>
-                    <p class="web-orders-text">Веб-Сайтов любой сложности</p>
+                    <p class="web-orders-text">Уровень самоотдачи</p>
                 </li>
-                <li class="web-orders-item">
+                <li class="web-orders-conditions-item">
                     <span class="conditions-numbers">100</span>
                     <span class="conditions-percents">%</span>
-                    <p class="web-orders-text">Мобильных приложений для iOS и Android</p>
+                    <p class="web-orders-text">Соблюдение сроков</p>
                 </li>
-                <li class="web-orders-item">
+                <li class="web-orders-conditions-item">
                     <span class="conditions-numbers">50</span>
                     <span class="conditions-percents">%</span>
-                    <p class="web-orders-text">Сдайдшоу и видео для корпоративных презенитций</p>
+                    <p class="web-orders-text">Минимальная предоплата</p>
                 </li>
             </ul>
+            </div>
         </section>
         
         <section class="customers">
             <h2 class="visualy-hidden">Наши клиенты</h2>
-            <ul class="customers-list">
+            <ul class="customers">
                 <li class="customers-item">
-                   <img class="customers-img" src="img/customer-html-academy.jpg" alt="html академия">
+                   <img class="customers-img" src="img/logo-1.png.png" alt="html академия">
                 </li>
                 <li class="customers-item">
-                   <img class="customers-img" src="img/customer-borodinski.jpg" alt="Барбершоп Бородинский">
+                   <img class="customers-img" src="img/logo-2.png.png" alt="Барбершоп Бородинский">
                 </li>
                 <li class="customers-item">
-                   <img class="customers-img" src="img/customer-pink.jpg" alt="Pink">
+                   <img class="customers-img" src="img/logo-3.png.png" alt="Pink">
                 </li>
                  <li class="customers-item">
-                   <img class="customers-img" src="img/customer-mishka.jpg" alt="Mishka">
+                   <img class="customers-img" src="img/logo-4.png.png" alt="Mishka">
                 </li>
             </ul>
         </section>
     </main>
+    
     <footer class="main-footer">
-        <img src="img/map.jpg" height="400" width="100%" alt="как добраться">
+       <img src="img/map.jpg" width="100%" height="100%" >
+       <img class="map-marker" src="img/map-marker.png">
+
+          
         <section class="address">
+           	
             <h3 class="map-discription">Nerds Design Studio</h3>
             <p>191186, Санкт-Петербург,<br>
             ул. Б.Конюшенная, д. 19.8</p>
             <p>тел.+7(812)275-75-75</p>
+            <a class="button-link" href="herds-shop.html"><span class="button button-write-us">Заказать</span></a>
+         
         </section>
-        <div class="footer-social">
-                <b>Давайте дружить!</b>
-                <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+      
+           
+        <div class="social-block">
+          <div class="footer-social">
+                
+                <ul class="social-button-list">
+                    <li><a class="social-button" href="#"><img  class="social-button-image" src="img/vk-icon.png" width="26" height="15"  ></a></li>
+                    <li><a class="social-button" href="#"><img  class="social-button-image" src="img/fb-icon.png" width="12" height="22"  ></a></li>
+                    <li><a class="social-button" href="#"><img  class="social-button-image" src="img/insta-icon.png" width="21" height="21"  ></a></li>
                 </ul>
+          </div>
+          <div class="lets-be-friends">
+             <b>Давайте дружить, это выгодно!</b>
+             <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
         
     </footer>
     
